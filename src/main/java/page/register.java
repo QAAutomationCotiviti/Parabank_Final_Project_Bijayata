@@ -25,15 +25,19 @@
             try {
                 util.getSiteUrl();
 
-//               getLoginInput("bijj123", "123");
+               getLoginInput("bijj123", "123");
 
 
 
-            getRegisterInput("bijayata","shrestha", "ktm", "bagmati", "KTm", "44600", "123", "9843671841", "bijj123", "123","123");
+           //getRegisterInput("bijayata","shrestha", "ktm", "bagmati", "KTm", "44600", "123", "9843671841", "bijj123", "123","123");
 //                getRequestLoan();
+           // getRegisterInput("","", "", "", "", "", "", "", "", "","");
 
+//                getBillPayInput();
 
-                getBillPayInput();
+                getRequestLoan();
+
+//                getLogout();
 
     //            getLoginInput("bijj", "123");
 
@@ -41,7 +45,7 @@
 
     //            getRegisterInput("","", "", "", "", "", "", "", "", "","");
     //
-    //            getValidationError();
+
 
             }
             catch (ElementNotInteractableException | NoAlertPresentException e){
@@ -130,6 +134,7 @@
 
             WebElement button = driver.findElement(getregisterButton[0]);
             button.click();
+//            getValidationError();
         }
 
         public static void getValidationError(){
@@ -208,19 +213,23 @@
 
 
         public static void getBillPayInput(){
-            billPayElement.getBillPayInput(driver);
+            billPayElement.getBillPayInput();
         }
 
         public static void getFindTransactionInput(){
-            findTransactionsElements.getFindTransaction(driver);
+            findTransactionsElements.getFindTransaction();
         }
 
         public static void getRequestLoan(){
-            requestLoanElements.ApplyForLoan(driver);
+            requestLoanElements.ApplyForLoan();
         }
 
         public static void getLogout(){
-            logoutElements.getLogoutButton(driver);
+            logoutElements.getLogoutButton();
+        }
+
+        public static void quitDriver(){
+            driver.quit();
         }
 
     }

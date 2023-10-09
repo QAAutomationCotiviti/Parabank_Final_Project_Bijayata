@@ -26,13 +26,18 @@ public class findTransactionsElements {
         this.driver = driver;
     }
 
-    public void getFindTransaction(WebDriver driver){
+    public void getFindTransaction(){
 
-        getFindTransactionById(driver, "123" );
+        getFindTransactionById( "16030" );
+        getFindTransactionByDate("10-9-2023");
+
+        getFindTransactionByDateRange("10-9-2023", "10-9-2023");
+
+        getFindTransactionByAmount("400");
 
     }
 
-    public void getFindTransactionById(WebDriver driver, String tnx_id){
+    public void getFindTransactionById( String tnx_id){
         WebElement findByTnxId = driver.findElement(findByTransactionId);
         findByTnxId.sendKeys(tnx_id);
 
@@ -42,7 +47,7 @@ public class findTransactionsElements {
 
     }
 
-    public void getFindTransactionByDate(WebDriver driver, String Date){
+    public void getFindTransactionByDate( String Date){
         WebElement findByDateWeb = driver.findElement(findByDate );
         findByDateWeb.sendKeys(Date);
 
@@ -52,7 +57,7 @@ public class findTransactionsElements {
 
     }
 
-    public void getFindTransactionByDateRange(WebDriver driver, String Date1, String Date2){
+    public void getFindTransactionByDateRange( String Date1, String Date2){
         WebElement findByDateWeb1 = driver.findElement(findByDateRange1 );
         findByDateWeb1.sendKeys(Date1);
 
@@ -65,7 +70,7 @@ public class findTransactionsElements {
 
     }
 
-    public void getFindTransactionByAmount(WebDriver driver, String amount){
+    public void getFindTransactionByAmount( String amount){
         WebElement findByAmountWeb = driver.findElement(findByAmount );
         findByAmountWeb.sendKeys(amount);
 

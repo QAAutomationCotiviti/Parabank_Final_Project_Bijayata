@@ -31,7 +31,7 @@ public class requestLoanElements {
 
 
 
-        public void ApplyForLoan(WebDriver driver){
+        public void ApplyForLoan(){
 
             WebElement requestLoanLink = driver.findElement(requestLink);
              requestLoanLink.click();
@@ -47,7 +47,7 @@ public class requestLoanElements {
             WebElement applyNowButton = driver.findElement(applyButton);
             applyNowButton.click();
 
-            loanRequestMessage();
+//            loanRequestMessage();
 
         }
 

@@ -8,7 +8,7 @@ public class billpayElements {
 
     private final WebDriver driver;
 
-    public final By billpayLink =By.xpath("//*[@id='leftPanel']/ul/li[4]/a");
+    public final By billpayLink =By.xpath("//*[@id=\"leftPanel\"]//ul//li[4]//a");
     public final By PayeeName =By.xpath("//*[@id=\"rightPanel\"]/div/div[1]/form/table/tbody/tr[1]/td[2]/input");
 
     public final By Address =By.xpath("//*[@id=\"rightPanel\"]/div/div[1]/form/table/tbody/tr[2]/td[2]/input");
@@ -23,13 +23,16 @@ public class billpayElements {
 
     public final By paymentButton =By.xpath("//*[@id=\"rightPanel\"]/div/div[1]/form/table/tbody/tr[14]/td[2]/input");
 
+    public final By billPayMess1 =By.xpath("//*[@id=\"rightPanel\"]/div/div[2]/p[1]");
+    public final By billPayMess2 =By.xpath("//*[@id=\"rightPanel\"]/div/div[2]/p[2]");
+
 
     public billpayElements(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public  void getBillPayInput( WebDriver driver){
+    public  void getBillPayInput(){
 
         WebElement billLink = driver.findElement(billpayLink);
         billLink.click();
@@ -78,7 +81,25 @@ public class billpayElements {
         WebElement sendPayButton = driver.findElement(paymentButton);
         sendPayButton.click();
 
+        billPaySuccessMessage();
 
+
+
+
+    }
+
+
+    public void billPaySuccessMessage(){
+
+        WebElement billPayMessage1 = driver.findElement(billPayMess1);
+        WebElement billPayMessage2 = driver.findElement(billPayMess2);
+        if(billPayMessage2!=null){
+            System.out.println(billPayMessage1.getText());
+            System.out.println(billPayMessage2.getText());
+        }
+        else{
+            System.out.println("-----error-----");
+        }
 
 
     }

@@ -13,7 +13,7 @@ public class logoutElement {
         this.driver = driver;
     }
 
-    public void getLogoutButton(WebDriver driver){
+    public void getLogoutButton(){
         WebElement logoutLinkWeb = driver.findElement(logoutLink);
         logoutLinkWeb.click();
     }
