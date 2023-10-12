@@ -5,9 +5,12 @@
     <classes>
       <class name="page.mainPage">
         <methods>
+          <include name="BillPay"/>
+          <include name="logOut"/>
           <include name="QuitDriver"/>
           <include name="findTransaction"/>
           <include name="getUrl"/>
+          <include name="RequestLoan"/>
         </methods>
       </class> <!-- page.mainPage -->
     </classes>

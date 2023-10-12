@@ -1,6 +1,7 @@
     package page;
 
     import org.openqa.selenium.*;
+    import org.openqa.selenium.support.ui.Wait;
     import pageElements.billpayElements;
     import pageElements.findTransactionsElements    ;
     import pageElements.loginElements;
@@ -12,6 +13,7 @@
     public class register {
         static utility util = new utility();
         static WebDriver driver = util.initializeDriver("chrome");
+//        static Wait<WebDriver> wait = util.genericWait(5,driver);
         static loginElements loginElements = new loginElements(driver);
         static registerElement registerElements = new registerElement(driver);
         static billpayElements billPayElement = new billpayElements(driver);
@@ -217,7 +219,8 @@
         }
 
         public static void getFindTransactionInput(){
-            findTransactionsElements.getFindTransaction();
+//            Wait<WebDriver> wait  = util.genericWait(20,driver);
+            findTransactionsElements.getFindTransaction("14476","10-9-2023","1200");
         }
 
         public static void getRequestLoan(){

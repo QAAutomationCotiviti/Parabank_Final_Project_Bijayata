@@ -18,48 +18,44 @@ public class mainPage {
 
 
     @BeforeTest
-    public void getUrl(){
+    public void getUrl() {
         utility.getSiteUrl();
         log.info("siteOpen");
         log.error("Errors");
     }
 
-//    @Test(priority = 1)
-//    public void logiIn(){
-//        reg.getRegisterInput("bijayata","shrestha", "ktm", "bagmati", "KTm", "44600", "123", "9843671841", "bijj123", "123","123");
-//    }
+
     @Test(priority = 1)
-    public void registerUser(){
-        reg.getRegisterInput("bijayata","shrestha", "ktm", "bagmati", "KTm", "44600", "123", "9843671841", "bijd", "12aa","12aa");
+    public void registerUser() {
+       reg.getRegisterInput("bijayata", "shrestha", "ktm", "bagmati", "KTm", "44600", "123", "9843671841", "bijayata", "123", "123");
+         // reg.getLoginInput("bijayata","123");
     }
 
     @Test(priority = 2)
-    public void BillPay(){
+    public void BillPay() {
         reg.getBillPayInput();
     }
 
     @Test(priority = 3)
-    public void findTransaction(){
+    public void findTransaction() {
         reg.getFindTransactionInput();
     }
 
     @Test(priority = 4)
-    public void RequestLoan(){
+    public void RequestLoan() {
         reg.getRequestLoan();
     }
 
     @Test(priority = 5)
-    public void logOut(){
+    public void logOut() {
         reg.getLogout();
     }
 
     @AfterTest
 
-    public void QuitDriver(){
+    public void QuitDriver() {
         reg.quitDriver();
     }
-
-
 
 
 }
