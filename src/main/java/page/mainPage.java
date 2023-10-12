@@ -21,7 +21,7 @@ public class mainPage {
     public void getUrl() {
         utility.getSiteUrl();
         log.info("siteOpen");
-        log.error("Errors");
+
     }
 
 
@@ -54,7 +54,7 @@ public class mainPage {
     @AfterTest
 
     public void QuitDriver() {
-        reg.quitDriver();
+        reg.quitDriver();    log.info("Quit driver");
     }
 
 

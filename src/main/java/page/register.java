@@ -220,7 +220,7 @@
 
         public static void getFindTransactionInput(){
 //            Wait<WebDriver> wait  = util.genericWait(20,driver);
-            findTransactionsElements.getFindTransaction("14476","10-9-2023","1200");
+            findTransactionsElements.getFindTransaction("14476","10-12-2023","1200");
         }
 
         public static void getRequestLoan(){
