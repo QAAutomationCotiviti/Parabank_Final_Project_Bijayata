@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-12T13:38:18 NPT" name="Default Suite" finished-at="2023-10-12T13:38:53 NPT" duration-ms="34505">
+  <suite started-at="2023-10-12T15:46:59 NPT" name="Default Suite" finished-at="2023-10-12T15:47:35 NPT" duration-ms="36005">
     <groups>
     </groups>
-    <test started-at="2023-10-12T13:38:18 NPT" name="Parabank_automation" finished-at="2023-10-12T13:38:53 NPT" duration-ms="34505">
+    <test started-at="2023-10-12T15:46:59 NPT" name="Parabank_automation" finished-at="2023-10-12T15:47:35 NPT" duration-ms="36005">
       <class name="page.mainPage">
-        <test-method is-config="true" signature="getUrl()[pri:0, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:18 NPT" name="getUrl" finished-at="2023-10-12T13:38:27 NPT" duration-ms="8975" status="PASS">
+        <test-method is-config="true" signature="getUrl()[pri:0, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:46:59 NPT" name="getUrl" finished-at="2023-10-12T15:47:06 NPT" duration-ms="6330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method signature="registerUser()[pri:1, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:27 NPT" name="registerUser" finished-at="2023-10-12T13:38:34 NPT" duration-ms="6117" status="PASS">
+        <test-method signature="registerUser()[pri:1, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:06 NPT" name="registerUser" finished-at="2023-10-12T15:47:14 NPT" duration-ms="7735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method signature="BillPay()[pri:2, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:34 NPT" name="BillPay" finished-at="2023-10-12T13:38:36 NPT" duration-ms="2466" status="PASS">
+        <test-method signature="BillPay()[pri:2, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:14 NPT" name="BillPay" finished-at="2023-10-12T15:47:16 NPT" duration-ms="2635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BillPay -->
-        <test-method signature="findTransaction()[pri:3, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:36 NPT" name="findTransaction" finished-at="2023-10-12T13:38:51 NPT" duration-ms="14616" status="PASS">
+        <test-method signature="findTransaction()[pri:3, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:16 NPT" name="findTransaction" finished-at="2023-10-12T15:47:31 NPT" duration-ms="15258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findTransaction -->
-        <test-method signature="RequestLoan()[pri:4, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:51 NPT" name="RequestLoan" finished-at="2023-10-12T13:38:51 NPT" duration-ms="738" status="PASS">
+        <test-method signature="RequestLoan()[pri:4, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:31 NPT" name="RequestLoan" finished-at="2023-10-12T15:47:33 NPT" duration-ms="1291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RequestLoan -->
-        <test-method signature="logOut()[pri:5, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:51 NPT" name="logOut" finished-at="2023-10-12T13:38:52 NPT" duration-ms="758" status="PASS">
+        <test-method signature="logOut()[pri:5, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:33 NPT" name="logOut" finished-at="2023-10-12T15:47:34 NPT" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:page.mainPage@409986fe]" started-at="2023-10-12T13:38:52 NPT" name="QuitDriver" finished-at="2023-10-12T13:38:53 NPT" duration-ms="786" status="PASS">
+        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:page.mainPage@2eaef76d]" started-at="2023-10-12T15:47:34 NPT" name="QuitDriver" finished-at="2023-10-12T15:47:35 NPT" duration-ms="1279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitDriver -->
